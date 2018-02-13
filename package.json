@@ -1,0 +1,52 @@
+{
+  "name": "micro-service-visualizer",
+  "version": "1.0.0",
+  "description": "Visual Map of MP micro services",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "webpack --config webpack.prod.js",
+    "watch": "webpack --watch --config webpack.dev.js",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.pixsystem.net:unnadi/micro-service-visualizer.git"
+  },
+  "keywords": [
+    "react",
+    "d3"
+  ],
+  "author": "Uche Nnadi",
+  "license": "MIT",
+  "dependencies": {
+    "d3": "^4.12.2",
+    "express": "^4.16.2",
+    "lodash": "^4.17.5",
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-minify-webpack-plugin": "^0.3.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^0.28.9",
+    "csv-loader": "^2.1.1",
+    "file-loader": "^1.1.6",
+    "html-webpack-plugin": "^2.30.1",
+    "style-loader": "^0.20.1",
+    "uglifyjs-webpack-plugin": "^1.1.8",
+    "webpack": "^3.11.0",
+    "webpack-dev-middleware": "^2.0.5",
+    "webpack-dev-server": "^2.11.1",
+    "webpack-merge": "^4.1.1",
+    "xml-loader": "^1.2.1"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  }
+}
